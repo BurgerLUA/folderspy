@@ -17,9 +17,6 @@ function FS_AskForPlayersAddons(attacker,cmd,args,argStr)
 			for k,v in pairs(player.GetAll()) do
 				if not SelectedPlayer then
 					local Nick = string.lower(v:Name())
-					
-					--print(Nick,PlayerToFind)
-					
 					if string.find(Nick,PlayerToFind) then
 						SelectedPlayer = v
 					end
